@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #27fc47;
+  border-radius: 100px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.searchArea {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  padding: 15px;
+  background: #ffffff;
+  text-align: center;
+  width: 230px;
+  border: none;
+  color: #27fc47;
+  border-radius: 25px 0 0 25px;
+}
+
+button {
+  padding: 13.5px;
+  background-color: #cfcfcf;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}

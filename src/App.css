@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(i-1.webp);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 100px;
+  background-color: #3c6693;
+  color: #fff;
+  cursor: pointer;
+}
+.exchange{
+  background-color: #c21b1b;
+  height: 100px;
+  width: 100px;
+}
+
+
+.error {
+  background-color: #ffffff;
+
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.error p {
+  color: #ff0000;
+}
+
+.selectedPokemon {
+  margin-bottom: 20px;
+}
+.selectedPokemon .card {
+  background: #007bff;
+  color: #fff;
+}
+.card.selected:hover, .selectedPokemon .card:hover {
+  color: #c21b1b;
+}
+.card {
+  width: 23%;
+  background-color: #2bbb53;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease; 
+  margin: 10px auto;
+}
+
+.card.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  background-color: #eaeaea;
+}
+
+.card h1 {
+  margin-top: 0;
+}
+
+
+.resultCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #4954cf;
+  color: #2ff239;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.card-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 48%;
+  }
+
+  .resultCard {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 10%;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .searchArea {
+    flex-direction: column;
+  }
+
+  .search {
+    margin: 100px;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+
+  .pagination button {
+    margin-bottom: 10px;
+  }
+}
+.pagination button :hover{
+  color: #e10909;
+
+}
